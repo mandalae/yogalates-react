@@ -60,7 +60,7 @@ jobs:
           command: sudo pip install awscli
       - run:
           name: Deploy to S3
-          command: aws s3 sync build s3://skaaning.ninja --delete
+          command: aws s3 sync build s3://skaaning.ninja --delete --acl public-read
 
 workflows:
   version: 2
