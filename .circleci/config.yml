@@ -53,8 +53,8 @@ jobs:
     working_directory: ~/repo
     steps:
       - attach_workspace:
-        # Must be absolute path or relative path from working_directory
-        at: ~/repo
+          # Must be absolute path or relative path from working_directory
+          at: ./
       - run:
           name: Install awscli
           command: sudo pip install awscli
