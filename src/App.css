@@ -1,0 +1,63 @@
+.App {
+  text-align: center;
+}
+
+.App ul {
+    margin: 0px;
+    list-style: none;
+    display: inline-block;
+    padding: 0px;
+}
+
+.App ul li {
+    display: inline-block;
+    margin-right: 20px;
+    position: relative;
+    height: 20px;
+}
+
+.App ul li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.content {
+    padding: 20px;
+    text-align: left;
+}
+
+.App ul li ul.slider {
+    display: inline-block;
+    position: absolute;
+    width: 200px;
+    text-align: left;
+    top: 20px;
+    left: 0px;
+
+    animation: 0.5s ease-out 0s 1 slideInFromTop;
+}
+
+@keyframes slideInFromTop {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.App-header {
+  background-color: #1fc8db;
+  background-image: linear-gradient(141deg, #9fb8ad 0%, #1fc8db 51%, #2cb5e8 75%);
+  height: 150px;
+  padding: 20px;
+  color: white;
+}
+
+.App-title {
+  font-size: 1.5em;
+}
+
+.App-intro {
+  font-size: large;
+}
