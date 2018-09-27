@@ -1,7 +1,7 @@
 import React from 'react';
 
 const menuSorter = (a, b) => {
-    return parseInt(a.M.index.N) - parseInt(b.M.index.N);
+    return parseInt(a.M.index.N, 10) - parseInt(b.M.index.N, 10);
 };
 
 export default class MenuComponent extends React.Component{
@@ -35,7 +35,7 @@ export default class MenuComponent extends React.Component{
                 });
                 return (
                     <li key={menuItem.M.index.N} onMouseEnter={this.showMenu} onMouseLeave={this.closeMenu}>
-                        <a href="#">{menuItem.M.headline.S}</a>
+                        <a href="#mouseover">{menuItem.M.headline.S}</a>
                         {
                             this.state.showMenu ? (
                                 <ul className="slider">
